@@ -41,7 +41,7 @@ body {
   background: url(../imgs/li_bg.png) no-repeat;
   background-size: 100% 100%;
   margin-right: 2%;
-  line-height: 25px;
+  padding:10px 0 15px;
   color: #fff;
 }
 .list li.check {
@@ -193,6 +193,7 @@ body {
 }
 .left .content select option {
   color: #fff;
+  background:#053e6a;
 }
 .left .content > div {
   width: 60%;
@@ -234,6 +235,11 @@ body {
   padding-left: 10px;
   background: transparent;
 }
+.left .content > div input{
+  float: right;
+  margin-right: 5px;
+  opacity: 0.8;
+}
 .bom {
   position: absolute;
   right: 15%;
@@ -254,9 +260,9 @@ body {
   left: 50%;
   top: 50%;
   margin: -10% -15%;
-  width: 30%;
+  width: 25%;
   height: 25%;
-  padding:3% 5%;
+  padding:3% 3%;
   box-sizing:border-box;
   background: url(../imgs/alert_bg.png) no-repeat;
   background-size: 100% 100%;
@@ -269,10 +275,11 @@ body {
   background: url(../imgs/alert_title_03.png) no-repeat;
   background-size: 100% auto;
   height: 30px;
-  width:35%;
+  width:30%;
 }
 .alert > div {
   line-height: 20px;
+
 }
 .alert > div input {
   display: none;

@@ -43,7 +43,12 @@ define(["jquery"],function($){
 		$(".bottom").css({"width":w*8/100,"height":w*8/100});
 	})
 	$("#nav").on("click",function(){
-		$(".left").toggle();
+		if( $(".left").hasClass("bounceInLeft") ){
+			$(".left").removeClass("bounceInLeft").addClass("bounceOutLeft")
+		}else{
+			$(".left").show().removeClass("bounceOutLeft").addClass("animated bounceInLeft")
+
+		}
 	})
 	$("#select").on("change",function(){
 		var index=$("option:selected").index();
