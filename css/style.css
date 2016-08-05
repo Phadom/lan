@@ -1,0 +1,307 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: url(../imgs/bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.map {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  background: url(../imgs/map.png) no-repeat;
+  background-size: 100% 100%;
+}
+.list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: url(../imgs/list_bg.png) repeat-x;
+  background-size: 100% 12px;
+  padding-top: 12px;
+  text-align: center;
+}
+.list ul {
+  width: 90%;
+  padding-left: 5%;
+}
+.list li {
+  float: left;
+  width: 8%;
+  background: url(../imgs/li_bg.png) no-repeat;
+  background-size: 100% 100%;
+  margin-right: 2%;
+  line-height: 25px;
+  color: #fff;
+}
+.list li.check {
+  background: url(../imgs/li_bg_check.png) no-repeat;
+  background-size: 100% 100%;
+}
+.top {
+  left: 60px;
+  top: 60px;
+}
+.bottom {
+  right: 5%;
+  bottom: 5%;
+  letter-spacing: 3px;
+}
+.nav {
+  background: url(../imgs/ball.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  color: #fff;
+}
+.nav > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.nav > div:first-child {
+  padding: 0 35%;
+  line-height: 18px;
+  box-sizing:border-box;
+}
+.nav .out {
+  background: url(../imgs/out.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-animation: shun 5s infinite linear;
+}
+.nav .in {
+  background: url(../imgs/in.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-animation: ni 5s infinite linear;
+}
+@-webkit-keyframes shun {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes ni {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  color: #fff;
+  width: 25%;
+  line-height: 18px;
+}
+.right > div {
+  padding: 20px 1% 20px 10%;
+  background: url(../imgs/right.png) no-repeat;
+  background-size: 100% 100%;
+}
+.right ul {
+  width: 100%;
+  padding-left:10%;
+  height: 20px;
+}
+.right ul:after {
+  clear: both;
+}
+.right ul li {
+  float: left;
+  line-height: 30px;
+  width: 47%;
+  text-align: center;
+  background: url(../imgs/right_li.png) no-repeat;
+  background-size: 100% auto;
+}
+.right ul li.check {
+  background: url(../imgs/right_li_check.png) no-repeat;
+  background-size: 100% auto;
+  margin: 2px 0 0 -10px;
+  line-height: 26px;
+}
+*{
+  background: none \9;
+}
+.left {
+  position: absolute;
+  left: 50px;
+  display: none;
+  width: 30%;
+  padding-bottom:6%;
+  background: url(../imgs/left.png) no-repeat;
+  background-size: 100% 100%;
+  top: 25%;
+  padding-left: 6% \9;
+}
+.left > h3 {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  left: -10px;
+  top: -20px;
+  background: url(../imgs/title.png) no-repeat;
+  background-size: 130px auto;
+}
+.left .content {
+  padding-top: 15%;
+  box-sizing:border-box;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
+@-moz-document url-prefix(){
+    .left .content {
+      padding-left:25%;
+    }
+    .nav > div:first-child {
+      width: 100%;
+
+      padding:37% 35%;
+      line-height: 18px;
+      box-sizing: border-box;
+    }
+}
+.left .content select {
+  border: 1px solid #15e5ff;
+  box-shadow: 0 0 5px #15e5ff;
+  display: block;
+  width: 60%;
+  background: transparent;
+  color: #fff;
+  padding-left: 10px;
+  outline: none;
+  margin-bottom: 5px;
+}
+.left .content select option {
+  color: #fff;
+}
+.left .content > div {
+  width: 60%;
+  line-height: 20px;
+  display: none;
+}
+.left .content > div:nth-child(2) {
+  display: block;
+}
+.left .content > div h3 {
+  width: 100%;
+  border: 1px solid #075f9d;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #075f9d;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 3px;
+  padding-left: 10px;
+}
+.left .content > div span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0px 3px;
+  margin-right: 5px;
+}
+.left .content > div ul {
+  display: none;
+}
+.left .content > div ul:nth-child(2){
+  display: block;
+}
+.left .content > div ul > li {
+  border: 1px solid #0189b1;
+  box-sizing: border-box;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 3px;
+  box-shadow: 0 0 5px #0189b1;
+  padding-left: 10px;
+  background: transparent;
+}
+.bom {
+  position: absolute;
+  right: 15%;
+  bottom:2%;
+  width: 70%;
+}
+.bom li {
+  width: 6%;
+  height: 80px;
+  margin-right: 10px;
+  float: right;
+  background: url(../imgs/control.png) no-repeat;
+  background-size: 100% auto;
+  background:transparent \9;
+}
+.alert {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10% -15%;
+  width: 30%;
+  height: 25%;
+  padding:3% 5%;
+  box-sizing:border-box;
+  background: url(../imgs/alert_bg.png) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.alert h3 {
+  position: absolute;
+  left: -5px;
+  top: -13px;
+  background: url(../imgs/alert_title_03.png) no-repeat;
+  background-size: 100% auto;
+  height: 30px;
+  width:35%;
+}
+.alert > div {
+  line-height: 20px;
+}
+.alert > div input {
+  display: none;
+}
+.alert > div input + label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url(../imgs/btn_03.png) no-repeat;
+  background-size: 200% auto;
+  background-position: -14px 0;
+}
+.alert > div input:checked + label {
+  background-position: 0 0;
+}
+.alert > div p {
+  margin-bottom: 5px;
+}
+.alert > div button {
+  border: none;
+  margin-top: 10px;
+  background: url(../imgs/alert_btn_07.png) no-repeat;
+  background-size: 100% 100%;
+  margin-left: 10%;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  outline: none;
+  height: 25px;
+}
